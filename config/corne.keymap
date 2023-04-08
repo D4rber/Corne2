@@ -16,7 +16,7 @@
 #define FUN   4
 
 &lt {
-        quick-tab-ms = <200>;
+        quick-tap-ms = <200>;
 };
 
 / {
