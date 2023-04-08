@@ -15,6 +15,9 @@
 #define SYM   3
 #define FUN   4
 
+&lt {
+        quick-tab-ms = <200>;
+};
 
 / {
         keymap {
