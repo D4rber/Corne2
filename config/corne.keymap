@@ -27,7 +27,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <41 42>;
+            key-positions = <10 11>;
             bindings = <&tog COL>;
         };
         combo_game {
