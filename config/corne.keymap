@@ -11,10 +11,10 @@
 
 #define DEFAULT 0
 #define NUM   1
-#define NAV   2
-#define SYM   3
-#define FUN   4
-#define COL   5
+#define COL   2
+#define NAV   3
+#define SYM   4
+#define FUN   5
 #define GME   6
 #define SEC   7
 
@@ -56,6 +56,21 @@
                   &kp LALT &lt SYM SPACE &lt NUM BSPC    &kp RET &lt NAV SPACE &mo FUN
                         >;
                 };
+
+     colemak-dhm_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB     |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  ;  | DEL  |
+// | CTRL TAB |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  '   |
+// | SHIFT    |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  /  | WIN  |
+//                    | ALT | SPC | BKSP |   | ENT | SPC  | FUN |
+                        bindings = <
+   &kp ESC       &kp Q         &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI  &kp DEL
+   &mt LCTRL TAB &kp A         &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O     &kp SQT
+   &kp LSHFT     &mt LSHFT Z   &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &mt RSHFT FSLH &kp RGUI
+                  &kp LALT &lt SYM SPACE &lt NUM BSPC    &kp RET &lt NAV SPACE &mo FUN
+                        >;
+                };
+                
                 num_layer {
 // -----------------------------------------------------------------------------------------
 // |   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -113,19 +128,7 @@
                         >;
                 };
 
-                colemak-dhm_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB     |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  ;  | DEL  |
-// | CTRL TAB |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  '   |
-// | SHIFT    |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  /  | WIN  |
-//                    | ALT | SPC | BKSP |   | ENT | SPC  | FUN |
-                        bindings = <
-   &kp ESC       &kp Q         &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI  &kp DEL
-   &mt LCTRL TAB &kp A         &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O     &kp SQT
-   &kp LSHFT     &mt LSHFT Z   &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &mt RSHFT FSLH &kp RGUI
-                  &kp LALT &lt SYM SPACE &lt NUM BSPC    &kp RET &lt NAV SPACE &mo FUN
-                        >;
-                };
+           
 
                 game_layer {
 // -----------------------------------------------------------------------------------------
