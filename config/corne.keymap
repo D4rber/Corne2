@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
-#define NUM   1
-#define COL   2
+#define COL   1
+#define NUM   2
 #define NAV   3
 #define SYM   4
 #define FUN   5
