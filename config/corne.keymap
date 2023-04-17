@@ -18,6 +18,18 @@
 #define GME   6
 #define SEC   7
 
+#undef MOUSEKEY_DELAY
+#define MOUSEKEY_DELAY          0
+#undef MOUSEKEY_INTERVAL
+#define MOUSEKEY_INTERVAL       16
+#undef MOUSEKEY_WHEEL_DELAY
+#define MOUSEKEY_WHEEL_DELAY    0
+#undef MOUSEKEY_MAX_SPEED
+#define MOUSEKEY_MAX_SPEED      6
+#undef MOUSEKEY_TIME_TO_MAX
+#define MOUSEKEY_TIME_TO_MAX    64
+
+
 &lt {
         quick-tap-ms = <200>;
 };
@@ -92,10 +104,10 @@
 // |   |    |    |    |     |     |   | |  PGUP  |   INS  | PGDOWN  |   |   |
 //               |    | MCR | MCL |   | |        |        |
                         bindings = <
-   &trans  &mkp LCLK  &mkp MOVE_UP  &mkp RCLK  &trans  &trans      &trans  &kp HOME   &kp UP    &kp END    &trans  &trans
-   &trans  &mkp MOVE_LEFT  &mkp MOVE_DOWN  &mkp MOVE_RIGHT  &trans  &trans      &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+   &trans  &trans  &trans  &mkp MOVE_UP  &trans  &trans      &trans  &kp HOME   &kp UP    &kp END    &trans  &trans
+   &trans  &trans  &mkp MOVE_LEFT  &mkp MOVE_DOWN  &mkp MOVE_RIGHT  &trans      &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PG_UP  &kp INS   &kp PG_DN  &trans  &trans
-                                   &none         &none        &none    &none  &none     &none
+                                   &none         &mkp RCLK        &mkp LCLK    &none  &none     &none
                         >;
                 };
 
