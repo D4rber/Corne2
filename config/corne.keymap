@@ -95,7 +95,7 @@
    &trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp HOME   &kp UP    &kp END    &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp PG_UP  &kp INS   &kp PG_DN  &trans  &trans
-                                   &none         &kp SPACE &kp BSPC   &none  &none     &none
+                                   &none         &lt SYM SPACE &lt NUM BSPC   &none  &none     &none
                         >;
                 };
 
